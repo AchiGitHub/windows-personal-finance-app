@@ -1,10 +1,10 @@
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\bin\Debug\PersonalFinanceApp.exe.config
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\bin\Debug\PersonalFinanceApp.exe
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\bin\Debug\PersonalFinanceApp.pdb
-C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.csprojAssemblyReference.cache
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.Form1.resources
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.Properties.Resources.resources
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.csproj.GenerateResource.cache
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.csproj.CoreCompileInputs.cache
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.exe
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.pdb
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.AddIncome.resources

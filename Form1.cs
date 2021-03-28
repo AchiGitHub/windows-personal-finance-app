@@ -15,6 +15,8 @@ namespace PersonalFinanceApp
         public Form1()
         {
             InitializeComponent();
+            moveBtnPointer(dashboardBtn);
+            addIncomePanel.Hide();
         }
 
         private void moveBtnPointer(Control btn) 
@@ -41,6 +43,7 @@ namespace PersonalFinanceApp
         private void addIncome_Click(object sender, EventArgs e)
         {
             moveBtnPointer(addIncomeBtn);
+            addIncomePanel.Show();
         }
 
         private void addExpenseBtn_Click(object sender, EventArgs e)
