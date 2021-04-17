@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBudget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddBudget.Designer.cs">
+      <DependentUpon>AddBudget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDebt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddDebt.Designer.cs">
+      <DependentUpon>AddDebt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExpense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddExpense.Designer.cs">
+      <DependentUpon>AddExpense.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddIncome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddBudget.resx">
+      <DependentUpon>AddBudget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDebt.resx">
+      <DependentUpon>AddDebt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddExpense.resx">
+      <DependentUpon>AddExpense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddIncome.resx">
       <DependentUpon>AddIncome.cs</DependentUpon>
     </EmbeddedResource>
