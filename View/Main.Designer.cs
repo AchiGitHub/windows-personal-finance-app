@@ -39,6 +39,12 @@ namespace PersonalFinanceApp
             this.addIncomeBtn = new System.Windows.Forms.Button();
             this.dashboardBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dashboard = new PersonalFinanceApp.View.Dashboard();
+            this.generateReport = new PersonalFinanceApp.GenerateReport();
+            this.addExpense = new PersonalFinanceApp.AddExpense();
+            this.addEvent = new PersonalFinanceApp.AddEvent();
+            this.addDebt = new PersonalFinanceApp.AddDebt();
+            this.addBudget = new PersonalFinanceApp.AddBudget();
             this.addIncomePanel = new PersonalFinanceApp.AddIncome();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -179,6 +185,12 @@ namespace PersonalFinanceApp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(250)))), ((int)(((byte)(248)))));
+            this.panel2.Controls.Add(this.dashboard);
+            this.panel2.Controls.Add(this.generateReport);
+            this.panel2.Controls.Add(this.addExpense);
+            this.panel2.Controls.Add(this.addEvent);
+            this.panel2.Controls.Add(this.addDebt);
+            this.panel2.Controls.Add(this.addBudget);
             this.panel2.Controls.Add(this.addIncomePanel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 79);
@@ -186,6 +198,54 @@ namespace PersonalFinanceApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1276, 631);
             this.panel2.TabIndex = 1;
+            // 
+            // dashboard
+            // 
+            this.dashboard.Location = new System.Drawing.Point(187, 70);
+            this.dashboard.Name = "dashboard";
+            this.dashboard.Size = new System.Drawing.Size(856, 451);
+            this.dashboard.TabIndex = 6;
+            this.dashboard.Load += new System.EventHandler(this.dashboard_Load);
+            // 
+            // generateReport
+            // 
+            this.generateReport.BackColor = System.Drawing.Color.White;
+            this.generateReport.Location = new System.Drawing.Point(187, 70);
+            this.generateReport.Name = "generateReport";
+            this.generateReport.Size = new System.Drawing.Size(856, 452);
+            this.generateReport.TabIndex = 5;
+            // 
+            // addExpense
+            // 
+            this.addExpense.BackColor = System.Drawing.Color.White;
+            this.addExpense.Location = new System.Drawing.Point(187, 70);
+            this.addExpense.Name = "addExpense";
+            this.addExpense.Size = new System.Drawing.Size(850, 453);
+            this.addExpense.TabIndex = 4;
+            // 
+            // addEvent
+            // 
+            this.addEvent.BackColor = System.Drawing.Color.White;
+            this.addEvent.Location = new System.Drawing.Point(187, 70);
+            this.addEvent.Name = "addEvent";
+            this.addEvent.Size = new System.Drawing.Size(852, 453);
+            this.addEvent.TabIndex = 3;
+            // 
+            // addDebt
+            // 
+            this.addDebt.BackColor = System.Drawing.Color.White;
+            this.addDebt.Location = new System.Drawing.Point(187, 70);
+            this.addDebt.Name = "addDebt";
+            this.addDebt.Size = new System.Drawing.Size(850, 453);
+            this.addDebt.TabIndex = 2;
+            // 
+            // addBudget
+            // 
+            this.addBudget.BackColor = System.Drawing.Color.White;
+            this.addBudget.Location = new System.Drawing.Point(187, 70);
+            this.addBudget.Name = "addBudget";
+            this.addBudget.Size = new System.Drawing.Size(851, 453);
+            this.addBudget.TabIndex = 1;
             // 
             // addIncomePanel
             // 
@@ -217,7 +277,6 @@ namespace PersonalFinanceApp
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button dashboardBtn;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button eventBtn;
         private System.Windows.Forms.Button generateReportBtn;
         private System.Windows.Forms.Button addBudgetBtn;
@@ -226,6 +285,13 @@ namespace PersonalFinanceApp
         private System.Windows.Forms.Button financialStatusBtn;
         private System.Windows.Forms.Panel btnPointerPanel;
         private AddIncome addIncomePanel;
+        private System.Windows.Forms.Panel panel2;
+        private AddBudget addBudget;
+        private AddEvent addEvent;
+        private AddDebt addDebt;
+        private GenerateReport generateReport;
+        private AddExpense addExpense;
+        private View.Dashboard dashboard;
     }
 }
 

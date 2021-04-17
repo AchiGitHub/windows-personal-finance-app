@@ -8,3 +8,11 @@ C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceAp
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.exe
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.pdb
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.AddIncome.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.csprojAssemblyReference.cache
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.AddBudget.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.AddDebt.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.AddEvent.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.AddExpense.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.GenerateReport.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.AddAccount.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.Dashboard.resources

@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace PersonalFinanceApp
 {
-    public partial class AddBudget : UserControl
+    public partial class GenerateReport : UserControl
     {
-        public AddBudget()
+        public GenerateReport()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenerateReport_Load(object sender, EventArgs e)
         {
 
         }

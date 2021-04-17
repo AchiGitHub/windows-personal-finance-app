@@ -29,43 +29,44 @@ namespace PersonalFinanceApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.createExpense = new System.Windows.Forms.Button();
+            this.expenseAttachment = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.expenseDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.note = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.paymentType = new System.Windows.Forms.ComboBox();
+            this.amount = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.expenseName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // createExpense
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(215)))), ((int)(((byte)(136)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(287, 371);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(471, 34);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "ADD EXPENSE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.createExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(215)))), ((int)(((byte)(136)))));
+            this.createExpense.FlatAppearance.BorderSize = 0;
+            this.createExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createExpense.ForeColor = System.Drawing.Color.White;
+            this.createExpense.Location = new System.Drawing.Point(287, 371);
+            this.createExpense.Margin = new System.Windows.Forms.Padding(0);
+            this.createExpense.Name = "createExpense";
+            this.createExpense.Size = new System.Drawing.Size(471, 34);
+            this.createExpense.TabIndex = 39;
+            this.createExpense.Text = "ADD EXPENSE";
+            this.createExpense.UseVisualStyleBackColor = false;
+            this.createExpense.Click += new System.EventHandler(this.createExpense_Click);
             // 
-            // button1
+            // expenseAttachment
             // 
-            this.button1.Location = new System.Drawing.Point(287, 311);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(472, 23);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "CHOOSE FILE...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.expenseAttachment.Location = new System.Drawing.Point(287, 311);
+            this.expenseAttachment.Name = "expenseAttachment";
+            this.expenseAttachment.Size = new System.Drawing.Size(472, 23);
+            this.expenseAttachment.TabIndex = 38;
+            this.expenseAttachment.Text = "CHOOSE FILE...";
+            this.expenseAttachment.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -77,12 +78,12 @@ namespace PersonalFinanceApp
             this.label6.TabIndex = 37;
             this.label6.Text = "ATTACH RECIEPT";
             // 
-            // dateTimePicker1
+            // expenseDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(287, 268);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(472, 22);
-            this.dateTimePicker1.TabIndex = 36;
+            this.expenseDate.Location = new System.Drawing.Point(287, 268);
+            this.expenseDate.Name = "expenseDate";
+            this.expenseDate.Size = new System.Drawing.Size(472, 22);
+            this.expenseDate.TabIndex = 36;
             // 
             // label5
             // 
@@ -94,13 +95,13 @@ namespace PersonalFinanceApp
             this.label5.TabIndex = 35;
             this.label5.Text = "DATE";
             // 
-            // textBox2
+            // note
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(287, 221);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(472, 27);
-            this.textBox2.TabIndex = 34;
+            this.note.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.note.Location = new System.Drawing.Point(287, 221);
+            this.note.Name = "note";
+            this.note.Size = new System.Drawing.Size(472, 27);
+            this.note.TabIndex = 34;
             // 
             // label4
             // 
@@ -112,21 +113,21 @@ namespace PersonalFinanceApp
             this.label4.TabIndex = 33;
             this.label4.Text = "NOTE";
             // 
-            // comboBox1
+            // paymentType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(472, 24);
-            this.comboBox1.TabIndex = 32;
+            this.paymentType.FormattingEnabled = true;
+            this.paymentType.Location = new System.Drawing.Point(287, 121);
+            this.paymentType.Name = "paymentType";
+            this.paymentType.Size = new System.Drawing.Size(472, 24);
+            this.paymentType.TabIndex = 32;
             // 
-            // textBox3
+            // amount
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(287, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(472, 27);
-            this.textBox3.TabIndex = 31;
+            this.amount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amount.Location = new System.Drawing.Point(287, 169);
+            this.amount.Name = "amount";
+            this.amount.Size = new System.Drawing.Size(472, 27);
+            this.amount.TabIndex = 31;
             // 
             // label3
             // 
@@ -148,13 +149,13 @@ namespace PersonalFinanceApp
             this.label2.TabIndex = 29;
             this.label2.Text = "PAYMENT TYPE";
             // 
-            // textBox1
+            // expenseName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(287, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(472, 27);
-            this.textBox1.TabIndex = 28;
+            this.expenseName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseName.Location = new System.Drawing.Point(287, 72);
+            this.expenseName.Name = "expenseName";
+            this.expenseName.Size = new System.Drawing.Size(472, 27);
+            this.expenseName.TabIndex = 28;
             // 
             // label1
             // 
@@ -170,21 +171,21 @@ namespace PersonalFinanceApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.createExpense);
+            this.Controls.Add(this.expenseAttachment);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.expenseDate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.note);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.paymentType);
+            this.Controls.Add(this.amount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.expenseName);
             this.Controls.Add(this.label1);
             this.Name = "AddExpense";
-            this.Size = new System.Drawing.Size(888, 478);
+            this.Size = new System.Drawing.Size(710, 382);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,18 +193,18 @@ namespace PersonalFinanceApp
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createExpense;
+        private System.Windows.Forms.Button expenseAttachment;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker expenseDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox note;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox paymentType;
+        private System.Windows.Forms.TextBox amount;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox expenseName;
         private System.Windows.Forms.Label label1;
     }
 }

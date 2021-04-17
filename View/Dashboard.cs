@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PersonalFinanceApp
+namespace PersonalFinanceApp.View
 {
-    public partial class AddExpense : UserControl
+    public partial class Dashboard : UserControl
     {
-        public AddExpense()
+        public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void addAccountBtn_Click(object sender, EventArgs e)
+        {
+            AddAccount addAccount = new AddAccount();
+            addAccount.Show();
         }
     }
 }

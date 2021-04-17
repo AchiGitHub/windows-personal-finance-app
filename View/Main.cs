@@ -16,7 +16,6 @@ namespace PersonalFinanceApp
         {
             InitializeComponent();
             moveBtnPointer(dashboardBtn);
-            addIncomePanel.Hide();
         }
 
         private void moveBtnPointer(Control btn) 
@@ -28,11 +27,13 @@ namespace PersonalFinanceApp
         private void button1_Click(object sender, EventArgs e)
         {
             moveBtnPointer(dashboardBtn);
+            dashboard.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             moveBtnPointer(eventBtn);
+            addEvent.BringToFront();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -43,22 +44,30 @@ namespace PersonalFinanceApp
         private void addIncome_Click(object sender, EventArgs e)
         {
             moveBtnPointer(addIncomeBtn);
-            addIncomePanel.Show();
+            addIncomePanel.BringToFront();
         }
 
         private void addExpenseBtn_Click(object sender, EventArgs e)
         {
             moveBtnPointer(addExpenseBtn);
+            addExpense.BringToFront();
         }
 
         private void addBudgetBtn_Click(object sender, EventArgs e)
         {
             moveBtnPointer(addBudgetBtn);
+            addBudget.BringToFront();
         }
 
         private void generateReportBtn_Click(object sender, EventArgs e)
         {
             moveBtnPointer(generateReportBtn);
+            generateReport.BringToFront();
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

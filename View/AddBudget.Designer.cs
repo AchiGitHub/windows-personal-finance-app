@@ -29,38 +29,39 @@ namespace PersonalFinanceApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.createBudgetBtn = new System.Windows.Forms.Button();
+            this.budgetStartDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.budgetAmount = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.budgetName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.budgetEndDate = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // createBudgetBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(215)))), ((int)(((byte)(136)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(298, 319);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(471, 34);
-            this.button2.TabIndex = 52;
-            this.button2.Text = "ADD BUDGET";
-            this.button2.UseVisualStyleBackColor = false;
+            this.createBudgetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(215)))), ((int)(((byte)(136)))));
+            this.createBudgetBtn.FlatAppearance.BorderSize = 0;
+            this.createBudgetBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createBudgetBtn.ForeColor = System.Drawing.Color.White;
+            this.createBudgetBtn.Location = new System.Drawing.Point(298, 319);
+            this.createBudgetBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.createBudgetBtn.Name = "createBudgetBtn";
+            this.createBudgetBtn.Size = new System.Drawing.Size(471, 34);
+            this.createBudgetBtn.TabIndex = 52;
+            this.createBudgetBtn.Text = "ADD BUDGET";
+            this.createBudgetBtn.UseVisualStyleBackColor = false;
+            this.createBudgetBtn.Click += new System.EventHandler(this.createBudgetBtn_Click);
             // 
-            // dateTimePicker1
+            // budgetStartDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(298, 144);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(472, 22);
-            this.dateTimePicker1.TabIndex = 49;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.budgetStartDate.Location = new System.Drawing.Point(298, 144);
+            this.budgetStartDate.Name = "budgetStartDate";
+            this.budgetStartDate.Size = new System.Drawing.Size(472, 22);
+            this.budgetStartDate.TabIndex = 49;
+            this.budgetStartDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label5
             // 
@@ -73,13 +74,13 @@ namespace PersonalFinanceApp
             this.label5.Text = "START DATE";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox3
+            // budgetAmount
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(298, 250);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(472, 27);
-            this.textBox3.TabIndex = 44;
+            this.budgetAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.budgetAmount.Location = new System.Drawing.Point(298, 250);
+            this.budgetAmount.Name = "budgetAmount";
+            this.budgetAmount.Size = new System.Drawing.Size(472, 27);
+            this.budgetAmount.TabIndex = 44;
             // 
             // label3
             // 
@@ -91,13 +92,13 @@ namespace PersonalFinanceApp
             this.label3.TabIndex = 43;
             this.label3.Text = "AMOUNT";
             // 
-            // textBox1
+            // budgetName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(298, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(472, 27);
-            this.textBox1.TabIndex = 41;
+            this.budgetName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.budgetName.Location = new System.Drawing.Point(298, 91);
+            this.budgetName.Name = "budgetName";
+            this.budgetName.Size = new System.Drawing.Size(472, 27);
+            this.budgetName.TabIndex = 41;
             // 
             // label1
             // 
@@ -109,12 +110,12 @@ namespace PersonalFinanceApp
             this.label1.TabIndex = 40;
             this.label1.Text = "NAME";
             // 
-            // dateTimePicker2
+            // budgetEndDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(298, 197);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(472, 22);
-            this.dateTimePicker2.TabIndex = 54;
+            this.budgetEndDate.Location = new System.Drawing.Point(298, 197);
+            this.budgetEndDate.Name = "budgetEndDate";
+            this.budgetEndDate.Size = new System.Drawing.Size(472, 22);
+            this.budgetEndDate.TabIndex = 54;
             // 
             // label2
             // 
@@ -130,14 +131,14 @@ namespace PersonalFinanceApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.budgetEndDate);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.createBudgetBtn);
+            this.Controls.Add(this.budgetStartDate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.budgetAmount);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.budgetName);
             this.Controls.Add(this.label1);
             this.Name = "AddBudget";
             this.Size = new System.Drawing.Size(888, 478);
@@ -148,14 +149,14 @@ namespace PersonalFinanceApp
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button createBudgetBtn;
+        private System.Windows.Forms.DateTimePicker budgetStartDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox budgetAmount;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox budgetName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker budgetEndDate;
         private System.Windows.Forms.Label label2;
     }
 }

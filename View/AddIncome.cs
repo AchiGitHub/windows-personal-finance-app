@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PersonalFinanceApp.Controller;
 
 namespace PersonalFinanceApp
 {
@@ -30,6 +31,18 @@ namespace PersonalFinanceApp
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void createIncomeBtn_Click(object sender, EventArgs e)
+        {
+            TransactionController transactionController = new TransactionController(note.Text, incomeDate.Value, "I",  amount.Text, incomeName.Text, paymentTypeBtn.Text);
+            transactionController.createTransaction();
+            note.Text = "";
+            amount.Text = "";
+            amount.Text = "";
+            incomeName.Text = "";
+            paymentTypeBtn.Text = "";
+            MessageBox.Show("Income Added Successfully!");
         }
     }
 }

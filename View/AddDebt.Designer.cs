@@ -29,40 +29,40 @@ namespace PersonalFinanceApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.createDebt = new System.Windows.Forms.Button();
+            this.debtDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.debtAmount = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.debtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.debtFrom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // createDebt
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(215)))), ((int)(((byte)(136)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(298, 325);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(471, 34);
-            this.button2.TabIndex = 52;
-            this.button2.Text = "ADD DEBT";
-            this.button2.UseVisualStyleBackColor = false;
+            this.createDebt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(215)))), ((int)(((byte)(136)))));
+            this.createDebt.FlatAppearance.BorderSize = 0;
+            this.createDebt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createDebt.ForeColor = System.Drawing.Color.White;
+            this.createDebt.Location = new System.Drawing.Point(298, 325);
+            this.createDebt.Margin = new System.Windows.Forms.Padding(0);
+            this.createDebt.Name = "createDebt";
+            this.createDebt.Size = new System.Drawing.Size(471, 34);
+            this.createDebt.TabIndex = 52;
+            this.createDebt.Text = "ADD DEBT";
+            this.createDebt.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // debtDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(298, 125);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(472, 22);
-            this.dateTimePicker1.TabIndex = 49;
+            this.debtDate.Location = new System.Drawing.Point(298, 125);
+            this.debtDate.Name = "debtDate";
+            this.debtDate.Size = new System.Drawing.Size(472, 22);
+            this.debtDate.TabIndex = 49;
             // 
             // label5
             // 
@@ -74,13 +74,13 @@ namespace PersonalFinanceApp
             this.label5.TabIndex = 48;
             this.label5.Text = "DATE";
             // 
-            // textBox3
+            // debtAmount
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(298, 260);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(472, 27);
-            this.textBox3.TabIndex = 44;
+            this.debtAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debtAmount.Location = new System.Drawing.Point(298, 260);
+            this.debtAmount.Name = "debtAmount";
+            this.debtAmount.Size = new System.Drawing.Size(472, 27);
+            this.debtAmount.TabIndex = 44;
             // 
             // label3
             // 
@@ -92,13 +92,13 @@ namespace PersonalFinanceApp
             this.label3.TabIndex = 43;
             this.label3.Text = "AMOUNT";
             // 
-            // textBox1
+            // debtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(298, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(472, 27);
-            this.textBox1.TabIndex = 41;
+            this.debtName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debtName.Location = new System.Drawing.Point(298, 73);
+            this.debtName.Name = "debtName";
+            this.debtName.Size = new System.Drawing.Size(472, 27);
+            this.debtName.TabIndex = 41;
             // 
             // label1
             // 
@@ -110,13 +110,13 @@ namespace PersonalFinanceApp
             this.label1.TabIndex = 40;
             this.label1.Text = "NAME";
             // 
-            // textBox2
+            // debtFrom
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(297, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(472, 27);
-            this.textBox2.TabIndex = 54;
+            this.debtFrom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debtFrom.Location = new System.Drawing.Point(297, 174);
+            this.debtFrom.Name = "debtFrom";
+            this.debtFrom.Size = new System.Drawing.Size(472, 27);
+            this.debtFrom.TabIndex = 54;
             // 
             // label2
             // 
@@ -169,14 +169,14 @@ namespace PersonalFinanceApp
             this.Controls.Add(this.label4);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.debtFrom);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.createDebt);
+            this.Controls.Add(this.debtDate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.debtAmount);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.debtName);
             this.Controls.Add(this.label1);
             this.Name = "AddDebt";
             this.Size = new System.Drawing.Size(888, 478);
@@ -187,14 +187,14 @@ namespace PersonalFinanceApp
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button createDebt;
+        private System.Windows.Forms.DateTimePicker debtDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox debtAmount;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox debtName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox debtFrom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
