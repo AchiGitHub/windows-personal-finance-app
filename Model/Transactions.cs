@@ -15,7 +15,7 @@ namespace PersonalFinanceApp.Model
         {
 
         }
-        public void createTransaction(String description, DateTime date, String type, Double amount, String name, String payment_type)
+        public void CreateTransaction(String description, DateTime date, String type, Double amount, String name, String payment_type)
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
@@ -23,6 +23,13 @@ namespace PersonalFinanceApp.Model
             cmd.CommandText = "insert into [Transactions] (description, date, type, amount, name, payment_type) values ('" + description + "', '" + date + "','" + type + "','" + amount + "', '" + name + "', '" + payment_type + "')";
             cmd.ExecuteNonQuery();
             connection.Close();
+        }
+
+        public SqlDataAdapter GetTransactions()
+        {
+            connection.Open();
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * from [Transactions]", connection);
+            return sqlDa;
         }
     }
 }

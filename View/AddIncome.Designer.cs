@@ -164,6 +164,7 @@ namespace PersonalFinanceApp
             this.Controls.Add(this.label1);
             this.Name = "AddIncome";
             this.Size = new System.Drawing.Size(888, 478);
+            this.Load += new System.EventHandler(this.AddIncome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

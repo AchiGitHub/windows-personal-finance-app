@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Controller\AddAccountController.cs" />
     <Compile Include="Controller\BudgetController.cs" />
+    <Compile Include="Controller\DashboardController.cs" />
     <Compile Include="Controller\EventController.cs" />
     <Compile Include="Controller\TransactionController.cs" />
     <Compile Include="Model\Account.cs" />

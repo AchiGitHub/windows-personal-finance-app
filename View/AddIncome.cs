@@ -16,6 +16,11 @@ namespace PersonalFinanceApp
         public AddIncome()
         {
             InitializeComponent();
+            TransactionController transactionController = new TransactionController();
+            BindingSource bs = new BindingSource();
+            List<string> accountNames = transactionController.getAccountNames();
+            bs.DataSource = accountNames;
+            paymentTypeBtn.DataSource = bs;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -40,14 +45,19 @@ namespace PersonalFinanceApp
             }
             else
             {
-                TransactionController transactionController = new TransactionController(note.Text, incomeDate.Value, "I", amount.Text, incomeName.Text, paymentTypeBtn.Text);
-                transactionController.createTransaction();
+                TransactionController transactionController = new TransactionController();
+                transactionController.createTransaction(note.Text, incomeDate.Value, "I", amount.Text, incomeName.Text, paymentTypeBtn.Text);
                 note.Text = "";
                 amount.Text = "";
                 incomeName.Text = "";
                 paymentTypeBtn.Text = "";
                 MessageBox.Show("Income Added Successfully!");
             }
+        }
+
+        private void AddIncome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

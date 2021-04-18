@@ -16,6 +16,11 @@ namespace PersonalFinanceApp
         public AddExpense()
         {
             InitializeComponent();
+            TransactionController transactionController = new TransactionController();
+            BindingSource bs = new BindingSource();
+            List<string> accountNames = transactionController.getAccountNames();
+            bs.DataSource = accountNames;
+            paymentType.DataSource = bs;
         }
 
         private void createExpense_Click(object sender, EventArgs e)
@@ -26,8 +31,8 @@ namespace PersonalFinanceApp
             } 
             else
             {
-                TransactionController transactionController = new TransactionController(note.Text, expenseDate.Value, "E", amount.Text, expenseName.Text, paymentType.Text);
-                transactionController.createTransaction();
+                TransactionController transactionController = new TransactionController();
+                transactionController.createTransaction(note.Text, expenseDate.Value, "E", amount.Text, expenseName.Text, paymentType.Text);
                 note.Text = "";
                 amount.Text = "";
                 expenseDate.Text = "";
@@ -35,6 +40,11 @@ namespace PersonalFinanceApp
                 expenseName.Text = "";
                 MessageBox.Show("Expense Added Successfully!");
             }
+        }
+
+        private void AddExpense_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

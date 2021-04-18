@@ -9,26 +9,25 @@ namespace PersonalFinanceApp.Controller
 {
     class TransactionController
     {
-        private String description;
-        private DateTime date;
-        private String type;
-        private Double amount;
-        private String name;
-        private String payment_type;
-
-        public TransactionController(String description, DateTime date, String type, String amount, String name, String payment_type) 
+        public TransactionController() 
         {
-            this.description = description;
-            this.date = date;
-            this.type = type;
-            this.amount = double.Parse(amount);
-            this.name = name;
-            this.payment_type = payment_type;
         }
 
-        public void createTransaction() {
+        public void createTransaction(String description, DateTime date, String type, String amount, String name, String payment_type) {
             Transactions transactions = new Transactions();
-            transactions.createTransaction(description, date, type, amount, name, payment_type);
+            transactions.CreateTransaction(description, date, type, double.Parse(amount), name, payment_type);
+            Account account = new Account();
+            double updateAmount = double.Parse(amount);
+            if (type == "E") 
+            {
+                updateAmount *= -1;
+            }
+            account.updateAccount(payment_type, updateAmount);
+        }
+
+        public List<string> getAccountNames() {
+            Account account = new Account();
+            return account.getAccountNames();
         }
     }
 }

@@ -163,6 +163,7 @@ namespace PersonalFinanceApp
             this.Controls.Add(this.label1);
             this.Name = "AddExpense";
             this.Size = new System.Drawing.Size(888, 478);
+            this.Load += new System.EventHandler(this.AddExpense_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

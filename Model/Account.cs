@@ -23,6 +23,48 @@ namespace PersonalFinanceApp.Model
             cmd.ExecuteNonQuery();
             connection.Close();
         }
-    
+
+        public List<string> getTotalAccountBalance() {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "SELECT * from [Accounts]";
+            SqlDataReader reader = cmd.ExecuteReader();
+            var accountBalances = new List<string>();
+            while (reader.Read())
+            {
+                accountBalances.Add(reader.GetValue(3).ToString());
+            }
+            connection.Close();
+
+            return accountBalances;
+        }
+
+        public List<string> getAccountNames() {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "SELECT * from [Accounts]";
+            SqlDataReader reader = cmd.ExecuteReader();
+            var accountNames = new List<string>();
+            while (reader.Read())
+            {
+                accountNames.Add(reader.GetValue(1).ToString());
+            }
+            connection.Close();
+
+            return accountNames;
+        }
+
+        public void updateAccount(String accountName, double amount) {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.AddWithValue("@currentAmount", amount);
+            cmd.Parameters.AddWithValue("@accountName", accountName);
+            cmd.CommandText = "UPDATE [Accounts] SET current_amount = current_amount + @currentAmount WHERE account_name=@accountName";
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }
