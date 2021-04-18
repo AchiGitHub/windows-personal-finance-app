@@ -20,20 +20,35 @@ namespace PersonalFinanceApp
 
         private void createTask_Click(object sender, EventArgs e)
         {
-            EventController addTask = new EventController(taskTitle.Text, taskDate.Value, taskNote.Text, "T", null, appointmentFrom.Value, appointmentTo.Value);
-            addTask.createEvent();
-            taskTitle.Text = "";
-            taskNote.Text = "";
-            MessageBox.Show("Task Created Successfully!");
+            if (taskTitle.Text == "" || taskNote.Text == "")
+            {
+                MessageBox.Show("Fill All Fields!");
+            }
+            else
+            {
+                EventController addTask = new EventController(taskTitle.Text, taskDate.Value, taskNote.Text, "T", null, appointmentFrom.Value, appointmentTo.Value);
+                addTask.createEvent();
+                taskTitle.Text = "";
+                taskNote.Text = "";
+                MessageBox.Show("Task Created Successfully!");
+            }
         }
 
         private void createAppointment_Click(object sender, EventArgs e)
         {
-            EventController addAppointment = new EventController(appointmentTitle.Text, taskDate.Value, null, "A", appointmentWith.Text, appointmentFrom.Value, appointmentTo.Value);
-            addAppointment.createEvent();
-            appointmentTitle.Text = "";
-            appointmentWith.Text = "";
-            MessageBox.Show("Appointment Created Successfully!");
+            if (appointmentTitle.Text == "" || appointmentWith.Text == "")
+            {
+                MessageBox.Show("Fill All Fields!");
+            }
+            else
+            {
+                EventController addAppointment = new EventController(appointmentTitle.Text, taskDate.Value, null, "A", appointmentWith.Text, appointmentFrom.Value, appointmentTo.Value);
+                addAppointment.createEvent();
+                appointmentTitle.Text = "";
+                appointmentWith.Text = "";
+                MessageBox.Show("Appointment Created Successfully!");
+            }
+             
         }
     }
 }

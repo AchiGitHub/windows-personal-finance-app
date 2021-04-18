@@ -20,15 +20,21 @@ namespace PersonalFinanceApp
 
         private void createExpense_Click(object sender, EventArgs e)
         {
-            TransactionController transactionController = new TransactionController(note.Text, expenseDate.Value, "E", amount.Text, expenseName.Text, paymentType.Text);
-            transactionController.createTransaction();
-            note.Text = "";
-            amount.Text = "";
-            amount.Text = "";
-            expenseDate.Text = "";
-            paymentType.Text = "";
-            expenseName.Text = "";
-            MessageBox.Show("Expense Added Successfully!");
+            if (note.Text == "" || amount.Text == "" || expenseDate.Text == "" || paymentType.Text == "" || expenseName.Text == "")
+            {
+                MessageBox.Show("Fill All Fields!");
+            } 
+            else
+            {
+                TransactionController transactionController = new TransactionController(note.Text, expenseDate.Value, "E", amount.Text, expenseName.Text, paymentType.Text);
+                transactionController.createTransaction();
+                note.Text = "";
+                amount.Text = "";
+                expenseDate.Text = "";
+                paymentType.Text = "";
+                expenseName.Text = "";
+                MessageBox.Show("Expense Added Successfully!");
+            }
         }
     }
 }

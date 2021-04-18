@@ -30,8 +30,6 @@ namespace PersonalFinanceApp
         private void InitializeComponent()
         {
             this.createIncomeBtn = new System.Windows.Forms.Button();
-            this.attachIncomeFile = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.incomeDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.note = new System.Windows.Forms.TextBox();
@@ -50,7 +48,7 @@ namespace PersonalFinanceApp
             this.createIncomeBtn.FlatAppearance.BorderSize = 0;
             this.createIncomeBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createIncomeBtn.ForeColor = System.Drawing.Color.White;
-            this.createIncomeBtn.Location = new System.Drawing.Point(238, 357);
+            this.createIncomeBtn.Location = new System.Drawing.Point(238, 312);
             this.createIncomeBtn.Margin = new System.Windows.Forms.Padding(0);
             this.createIncomeBtn.Name = "createIncomeBtn";
             this.createIncomeBtn.Size = new System.Drawing.Size(471, 34);
@@ -58,25 +56,6 @@ namespace PersonalFinanceApp
             this.createIncomeBtn.Text = "ADD INCOME";
             this.createIncomeBtn.UseVisualStyleBackColor = false;
             this.createIncomeBtn.Click += new System.EventHandler(this.createIncomeBtn_Click);
-            // 
-            // attachIncomeFile
-            // 
-            this.attachIncomeFile.Location = new System.Drawing.Point(238, 297);
-            this.attachIncomeFile.Name = "attachIncomeFile";
-            this.attachIncomeFile.Size = new System.Drawing.Size(472, 23);
-            this.attachIncomeFile.TabIndex = 25;
-            this.attachIncomeFile.Text = "CHOOSE FILE...";
-            this.attachIncomeFile.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(58, 298);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 23);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "ATTACH RECIEPT";
             // 
             // incomeDate
             // 
@@ -173,8 +152,6 @@ namespace PersonalFinanceApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.createIncomeBtn);
-            this.Controls.Add(this.attachIncomeFile);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.incomeDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.note);
@@ -195,8 +172,6 @@ namespace PersonalFinanceApp
         #endregion
 
         private System.Windows.Forms.Button createIncomeBtn;
-        private System.Windows.Forms.Button attachIncomeFile;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker incomeDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox note;

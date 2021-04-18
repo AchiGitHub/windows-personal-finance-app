@@ -30,11 +30,18 @@ namespace PersonalFinanceApp
 
         private void createBudgetBtn_Click(object sender, EventArgs e)
         {
-            BudgetController addBudget = new BudgetController(budgetName.Text,budgetStartDate.Value, budgetEndDate.Value, budgetAmount.Text);
-            addBudget.createTransaction();
-            budgetName.Text = "";
-            budgetAmount.Text = "";
-            MessageBox.Show("Budget Created Successfully!");
+            if (budgetName.Text == "" || budgetAmount.Text == "")
+            {
+                MessageBox.Show("Fill All Fields!");
+            }
+            else
+            {
+                BudgetController addBudget = new BudgetController(budgetName.Text, budgetStartDate.Value, budgetEndDate.Value, budgetAmount.Text);
+                addBudget.createTransaction();
+                budgetName.Text = "";
+                budgetAmount.Text = "";
+                MessageBox.Show("Budget Created Successfully!");
+            }
         }
     }
 }

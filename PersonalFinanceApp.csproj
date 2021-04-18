@@ -120,10 +120,10 @@
     <Compile Include="View\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenerateReport.cs">
+    <Compile Include="View\GenerateReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GenerateReport.Designer.cs">
+    <Compile Include="View\GenerateReport.Designer.cs">
       <DependentUpon>GenerateReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -152,7 +152,7 @@
     <EmbeddedResource Include="View\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenerateReport.resx">
+    <EmbeddedResource Include="View\GenerateReport.resx">
       <DependentUpon>GenerateReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

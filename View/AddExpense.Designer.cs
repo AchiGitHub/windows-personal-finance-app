@@ -30,8 +30,6 @@ namespace PersonalFinanceApp
         private void InitializeComponent()
         {
             this.createExpense = new System.Windows.Forms.Button();
-            this.expenseAttachment = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.expenseDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.note = new System.Windows.Forms.TextBox();
@@ -50,7 +48,7 @@ namespace PersonalFinanceApp
             this.createExpense.FlatAppearance.BorderSize = 0;
             this.createExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createExpense.ForeColor = System.Drawing.Color.White;
-            this.createExpense.Location = new System.Drawing.Point(287, 371);
+            this.createExpense.Location = new System.Drawing.Point(287, 326);
             this.createExpense.Margin = new System.Windows.Forms.Padding(0);
             this.createExpense.Name = "createExpense";
             this.createExpense.Size = new System.Drawing.Size(471, 34);
@@ -58,25 +56,6 @@ namespace PersonalFinanceApp
             this.createExpense.Text = "ADD EXPENSE";
             this.createExpense.UseVisualStyleBackColor = false;
             this.createExpense.Click += new System.EventHandler(this.createExpense_Click);
-            // 
-            // expenseAttachment
-            // 
-            this.expenseAttachment.Location = new System.Drawing.Point(287, 311);
-            this.expenseAttachment.Name = "expenseAttachment";
-            this.expenseAttachment.Size = new System.Drawing.Size(472, 23);
-            this.expenseAttachment.TabIndex = 38;
-            this.expenseAttachment.Text = "CHOOSE FILE...";
-            this.expenseAttachment.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(107, 312);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 23);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "ATTACH RECIEPT";
             // 
             // expenseDate
             // 
@@ -172,8 +151,6 @@ namespace PersonalFinanceApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.createExpense);
-            this.Controls.Add(this.expenseAttachment);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.expenseDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.note);
@@ -185,7 +162,7 @@ namespace PersonalFinanceApp
             this.Controls.Add(this.expenseName);
             this.Controls.Add(this.label1);
             this.Name = "AddExpense";
-            this.Size = new System.Drawing.Size(710, 382);
+            this.Size = new System.Drawing.Size(888, 478);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,8 +171,6 @@ namespace PersonalFinanceApp
         #endregion
 
         private System.Windows.Forms.Button createExpense;
-        private System.Windows.Forms.Button expenseAttachment;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker expenseDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox note;

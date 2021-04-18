@@ -283,7 +283,7 @@ namespace PersonalFinanceApp
             this.Controls.Add(this.normalReportName);
             this.Controls.Add(this.label1);
             this.Name = "GenerateReport";
-            this.Size = new System.Drawing.Size(710, 382);
+            this.Size = new System.Drawing.Size(888, 478);
             this.Load += new System.EventHandler(this.GenerateReport_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

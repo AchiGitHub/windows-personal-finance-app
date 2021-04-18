@@ -35,14 +35,19 @@ namespace PersonalFinanceApp
 
         private void createIncomeBtn_Click(object sender, EventArgs e)
         {
-            TransactionController transactionController = new TransactionController(note.Text, incomeDate.Value, "I",  amount.Text, incomeName.Text, paymentTypeBtn.Text);
-            transactionController.createTransaction();
-            note.Text = "";
-            amount.Text = "";
-            amount.Text = "";
-            incomeName.Text = "";
-            paymentTypeBtn.Text = "";
-            MessageBox.Show("Income Added Successfully!");
+            if (incomeName.Text == "" || note.Text == "" || amount.Text == "" || paymentTypeBtn.Text == "") {
+                MessageBox.Show("Fill All Fields!");
+            }
+            else
+            {
+                TransactionController transactionController = new TransactionController(note.Text, incomeDate.Value, "I", amount.Text, incomeName.Text, paymentTypeBtn.Text);
+                transactionController.createTransaction();
+                note.Text = "";
+                amount.Text = "";
+                incomeName.Text = "";
+                paymentTypeBtn.Text = "";
+                MessageBox.Show("Income Added Successfully!");
+            }
         }
     }
 }
