@@ -170,7 +170,6 @@ namespace PersonalFinanceApp.View
             this.Controls.Add(this.label1);
             this.Name = "AddAccount";
             this.Text = "AddAccount";
-            this.Load += new System.EventHandler(this.AddAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

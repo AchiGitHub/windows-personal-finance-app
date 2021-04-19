@@ -18,36 +18,24 @@ namespace PersonalFinanceApp.View
         {
             InitializeComponent();
 
-            LoadTotalBalance();
-
-            LoadRecentTransactions();
-
-            LoadAccountDetails();
-
+            this.refreshDashboard();
         }
 
         private void AddAccountBtn_Click(object sender, EventArgs e)
         {
             AddAccount addAccount = new AddAccount();
+            //bind the add account form closing event
+            addAccount.FormClosing += new FormClosingEventHandler(this.AddAccount_FormClosing);
             addAccount.StartPosition = FormStartPosition.CenterParent;
             addAccount.ShowDialog(this);
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        public void LoadTotalBalance()
         {
-            LoadTotalBalance();
-        }
-
-        public void LoadTotalBalance() {
             DashboardController dashboardController = new DashboardController();
             double totalAmount = dashboardController.GetTotalBalance();
 
             totalBalanceLbl.Text = "Rs. " + totalAmount.ToString("N2");
-        }
-
-        private void Dashboard_VisibleChanged(object sender, EventArgs e)
-        {
-            LoadTotalBalance();
         }
         public void LoadRecentTransactions()
         {
@@ -68,12 +56,31 @@ namespace PersonalFinanceApp.View
             int y = 0;
             for (int i = 0; i < listOfAccounts.Count; i++)
             {
-                var control = new AccountDetails(listOfAccounts[i]);
-                control.Location = new Point(x, y);
+                var control = new AccountDetails(listOfAccounts[i])
+                {
+                    Location = new Point(x, y)
+                };
                 accountsPanel.Controls.Add(control);
                 x += control.Width + 10;
             }
         }
 
+        //refresh the data in the dashboard when there are updates
+        private void Dashboard_Enter(object sender, EventArgs e)
+        {
+            //call when the dashboard gains focus
+            this.refreshDashboard();
+        }
+        //refresh the dashboard when an account is added
+        private void AddAccount_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.refreshDashboard();
+        }
+
+        private void refreshDashboard() {
+            LoadTotalBalance();
+            LoadRecentTransactions();
+            LoadAccountDetails();
+        }
     }
 }

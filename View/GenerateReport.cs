@@ -55,7 +55,7 @@ namespace PersonalFinanceApp
                         string type = row["type"].ToString();
                         string amount = row["amount"].ToString();
                         string description = row["description"].ToString();
-                        string date = row["date"].ToString();
+                        string date = row["transaction_date"].ToString();
                         string payment_type = row["payment_type"].ToString();
 
                         tw.Write(id);

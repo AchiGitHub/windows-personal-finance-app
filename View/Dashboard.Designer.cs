@@ -35,7 +35,7 @@ namespace PersonalFinanceApp.View
             this.addAccountBtn = new System.Windows.Forms.Button();
             this.recentTransactions = new System.Windows.Forms.DataGridView();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transaction_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,7 +95,7 @@ namespace PersonalFinanceApp.View
             this.recentTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.recentTransactions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
-            this.date,
+            this.transaction_date,
             this.description,
             this.amount,
             this.type,
@@ -115,13 +115,13 @@ namespace PersonalFinanceApp.View
             this.name.Name = "name";
             this.name.Width = 125;
             // 
-            // date
+            // transaction_date
             // 
-            this.date.DataPropertyName = "date";
-            this.date.HeaderText = "Date";
-            this.date.MinimumWidth = 6;
-            this.date.Name = "date";
-            this.date.Width = 125;
+            this.transaction_date.DataPropertyName = "transaction_date";
+            this.transaction_date.HeaderText = "Date";
+            this.transaction_date.MinimumWidth = 6;
+            this.transaction_date.Name = "transaction_date";
+            this.transaction_date.Width = 125;
             // 
             // description
             // 
@@ -173,8 +173,7 @@ namespace PersonalFinanceApp.View
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
             this.Size = new System.Drawing.Size(888, 478);
-            this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.VisibleChanged += new System.EventHandler(this.Dashboard_VisibleChanged);
+            this.Enter += new System.EventHandler(this.Dashboard_Enter);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.recentTransactions)).EndInit();
             this.ResumeLayout(false);
@@ -188,12 +187,12 @@ namespace PersonalFinanceApp.View
         private System.Windows.Forms.Label totalBalanceLbl;
         private System.Windows.Forms.Button addAccountBtn;
         private System.Windows.Forms.DataGridView recentTransactions;
+        private System.Windows.Forms.Panel accountsPanel;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn transaction_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn description;
         private System.Windows.Forms.DataGridViewTextBoxColumn amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn payment_type;
-        private System.Windows.Forms.Panel accountsPanel;
     }
 }

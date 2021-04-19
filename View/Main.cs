@@ -28,13 +28,8 @@ namespace PersonalFinanceApp
         private void Button1_Click(object sender, EventArgs e)
         {
             MoveBtnPointer(dashboardBtn);
-            Dashboard db = new Dashboard();
-            db.LoadAccountDetails();
-            db.LoadRecentTransactions();
-            db.LoadTotalBalance();
-
-            dashboard.Refresh();
             dashboard.BringToFront();
+            dashboard.Focus();
         }
 
         private void Button4_Click(object sender, EventArgs e)

@@ -21,7 +21,7 @@ namespace PersonalFinanceApp.Model
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "insert into [Transactions] (description, date, type, amount, name, payment_type) values ('" + description + "', '" + date + "','" + type + "','" + amount + "', '" + name + "', '" + payment_type + "')";
+            cmd.CommandText = "insert into [Transactions] (description, transaction_date, type, amount, name, payment_type) values ('" + description + "', '" + date + "','" + type + "','" + amount + "', '" + name + "', '" + payment_type + "')";
             cmd.ExecuteNonQuery();
             connection.Close();
         }
@@ -36,7 +36,7 @@ namespace PersonalFinanceApp.Model
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
-            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Transactions] WHERE date BETWEEN @sDate AND @eDate", connection);
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Transactions] WHERE transaction_date BETWEEN @sDate AND @eDate", connection);
 
             //query parameters to select the date range
             data.SelectCommand.Parameters.AddWithValue("@sDate", startDate);

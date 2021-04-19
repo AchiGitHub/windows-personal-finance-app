@@ -18,11 +18,6 @@ namespace PersonalFinanceApp.View
             InitializeComponent();
         }
 
-        private void AddAccount_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void AccountType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (accountType.SelectedIndex != 0)
