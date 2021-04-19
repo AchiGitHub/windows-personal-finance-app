@@ -1,3 +1,0 @@
-1, Food, I, 200, Lunch, 4/17/2021 11:20:25 PM, Cash
-3, Electricity Bill, E, 2000, !st Month, 4/17/2021 11:30:50 PM, Cash
-4, Water Bill, E, 1992, 2nd Month, 4/17/2021 11:31:40 PM, Cash

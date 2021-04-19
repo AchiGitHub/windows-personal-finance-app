@@ -37,6 +37,8 @@ namespace PersonalFinanceApp.Model
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Transactions] WHERE date BETWEEN @sDate AND @eDate", connection);
+
+            //query parameters to select the date range
             data.SelectCommand.Parameters.AddWithValue("@sDate", startDate);
             data.SelectCommand.Parameters.AddWithValue("@eDate", endDate);
 
