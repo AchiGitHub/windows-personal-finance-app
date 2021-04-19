@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PersonalFinanceApp.View;
 
 namespace PersonalFinanceApp
 {
@@ -27,6 +28,11 @@ namespace PersonalFinanceApp
         private void button1_Click(object sender, EventArgs e)
         {
             moveBtnPointer(dashboardBtn);
+            Dashboard db = new Dashboard();
+            db.LoadAccountDetails();
+            db.LoadRecentTransactions();
+            db.LoadTotalBalance();
+
             dashboard.BringToFront();
         }
 

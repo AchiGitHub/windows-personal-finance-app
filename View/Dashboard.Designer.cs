@@ -40,6 +40,7 @@ namespace PersonalFinanceApp.View
             this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.payment_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accountsPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recentTransactions)).BeginInit();
             this.SuspendLayout();
@@ -59,9 +60,9 @@ namespace PersonalFinanceApp.View
             this.totalBalanceLbl.AutoSize = true;
             this.totalBalanceLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.totalBalanceLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(110)))));
-            this.totalBalanceLbl.Location = new System.Drawing.Point(18, 52);
+            this.totalBalanceLbl.Location = new System.Drawing.Point(24, 43);
             this.totalBalanceLbl.Name = "totalBalanceLbl";
-            this.totalBalanceLbl.Size = new System.Drawing.Size(118, 46);
+            this.totalBalanceLbl.Size = new System.Drawing.Size(148, 58);
             this.totalBalanceLbl.TabIndex = 1;
             this.totalBalanceLbl.Text = "22,123";
             // 
@@ -154,10 +155,19 @@ namespace PersonalFinanceApp.View
             this.payment_type.Name = "payment_type";
             this.payment_type.Width = 125;
             // 
+            // accountsPanel
+            // 
+            this.accountsPanel.AutoScroll = true;
+            this.accountsPanel.Location = new System.Drawing.Point(345, 31);
+            this.accountsPanel.Name = "accountsPanel";
+            this.accountsPanel.Size = new System.Drawing.Size(485, 184);
+            this.accountsPanel.TabIndex = 3;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.accountsPanel);
             this.Controls.Add(this.recentTransactions);
             this.Controls.Add(this.addAccountBtn);
             this.Controls.Add(this.panel1);
@@ -185,5 +195,6 @@ namespace PersonalFinanceApp.View
         private System.Windows.Forms.DataGridViewTextBoxColumn amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn payment_type;
+        private System.Windows.Forms.Panel accountsPanel;
     }
 }

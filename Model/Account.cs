@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient; 
+using System.Data.SqlClient;
+using PersonalFinanceApp.Utilities;
+using System.Data;
 
 namespace PersonalFinanceApp.Model
 {
@@ -65,6 +67,30 @@ namespace PersonalFinanceApp.Model
             cmd.CommandText = "UPDATE [Accounts] SET current_amount = current_amount + @currentAmount WHERE account_name=@accountName";
             cmd.ExecuteNonQuery();
             connection.Close();
+        }
+
+        public List<UserAccount> GetAccounts() {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "SELECT * from [Accounts]";
+            var data = cmd.ExecuteReader();
+            var table = new DataTable();
+            table.Load(data);
+            connection.Close();
+
+            var accounts = new List<UserAccount>();
+            foreach (DataRow row in table.Rows)
+            {
+                accounts.Add(new UserAccount
+                {
+                    AccountName = row["account_name"].ToString(),
+                    CurrentAmount = row["current_amount"].ToString(),
+                    InitialAmount = row["initial_amount"].ToString(),
+                });
+            }
+
+            return accounts;
         }
     }
 }

@@ -16,3 +16,4 @@ C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceAp
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.GenerateReport.resources
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.AddAccount.resources
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.Dashboard.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.AccountDetails.resources

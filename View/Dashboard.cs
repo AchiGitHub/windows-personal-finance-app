@@ -17,29 +17,28 @@ namespace PersonalFinanceApp.View
         public Dashboard()
         {
             InitializeComponent();
-            Transactions transactions = new Transactions();
-            DataTable dtbl = new DataTable();
 
-            transactions.GetTransactions().Fill(dtbl);
+            LoadTotalBalance();
 
-            recentTransactions.AutoGenerateColumns = false;
-            recentTransactions.DataSource = dtbl;
+            LoadRecentTransactions();
 
-            loadTotalBalance();
+            LoadAccountDetails();
+
         }
 
         private void addAccountBtn_Click(object sender, EventArgs e)
         {
             AddAccount addAccount = new AddAccount();
-            addAccount.Show();
+            addAccount.StartPosition = FormStartPosition.CenterParent;
+            addAccount.ShowDialog(this);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            loadTotalBalance();
+            LoadTotalBalance();
         }
 
-        private void loadTotalBalance() {
+        public void LoadTotalBalance() {
             DashboardController dashboardController = new DashboardController();
             double totalAmount = dashboardController.getTotalBalance();
 
@@ -48,7 +47,33 @@ namespace PersonalFinanceApp.View
 
         private void Dashboard_VisibleChanged(object sender, EventArgs e)
         {
-            loadTotalBalance();
+            LoadTotalBalance();
         }
+        public void LoadRecentTransactions()
+        {
+            Transactions transactions = new Transactions();
+            DataTable dtbl = new DataTable();
+
+            transactions.GetTransactions().Fill(dtbl);
+
+            recentTransactions.AutoGenerateColumns = false;
+            recentTransactions.DataSource = dtbl;
+        }
+
+        public void LoadAccountDetails() {
+            Account account = new Account();
+            var listOfAccounts = account.GetAccounts();
+
+            int x = 0;
+            int y = 0;
+            for (int i = 0; i < listOfAccounts.Count; i++)
+            {
+                var control = new AccountDetails(listOfAccounts[i]);
+                control.Location = new Point(x, y);
+                accountsPanel.Controls.Add(control);
+                x += control.Width + 10;
+            }
+        }
+
     }
 }

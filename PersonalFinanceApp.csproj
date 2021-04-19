@@ -72,7 +72,14 @@
     <Compile Include="Model\Budget.cs" />
     <Compile Include="Model\Event.cs" />
     <Compile Include="Model\Transactions.cs" />
+    <Compile Include="Utilities\UserAccount.cs" />
     <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="View\AccountDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AccountDetails.Designer.cs">
+      <DependentUpon>AccountDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\AddAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +136,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\AccountDetails.resx">
+      <DependentUpon>AccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AddAccount.resx">
       <DependentUpon>AddAccount.cs</DependentUpon>
     </EmbeddedResource>
