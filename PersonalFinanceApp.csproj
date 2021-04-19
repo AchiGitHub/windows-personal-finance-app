@@ -63,7 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\AddAccountController.cs" />
+    <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\BudgetController.cs" />
     <Compile Include="Controller\DashboardController.cs" />
     <Compile Include="Controller\EventController.cs" />

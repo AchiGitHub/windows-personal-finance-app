@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace PersonalFinanceApp.Model
 {
@@ -30,6 +31,19 @@ namespace PersonalFinanceApp.Model
             connection.Open();
             SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * from [Transactions]", connection);
             return sqlDa;
+        }
+        public DataTable GetReportData(DateTime startDate, DateTime endDate)
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Transactions] WHERE date BETWEEN @sDate AND @eDate", connection);
+            data.SelectCommand.Parameters.AddWithValue("@sDate", startDate);
+            data.SelectCommand.Parameters.AddWithValue("@eDate", endDate);
+
+            DataTable dbtl = new DataTable();
+
+            data.Fill(dbtl);
+            return dbtl;
         }
     }
 }

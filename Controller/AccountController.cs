@@ -7,7 +7,7 @@ using PersonalFinanceApp.Model;
 
 namespace PersonalFinanceApp.Controller
 {
-    class AddAccountController
+    class AccountController
     {
         private String account_name;
         private Double initial_amount;
@@ -16,7 +16,7 @@ namespace PersonalFinanceApp.Controller
         private String bank_account_number;
         private String bank_name;
 
-        public AddAccountController(String account_name, String amount, String account_type, String bank_account_number, String bank_name) {
+        public AccountController(String account_name, String amount, String account_type, String bank_account_number, String bank_name) {
             this.account_name = account_name;
             this.account_type = account_type;
             this.initial_amount = double.Parse(amount);

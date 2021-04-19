@@ -41,7 +41,7 @@ namespace PersonalFinanceApp.View
             this.accountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(110)))));
             this.accountName.Location = new System.Drawing.Point(0, 0);
             this.accountName.Name = "accountName";
-            this.accountName.Size = new System.Drawing.Size(283, 36);
+            this.accountName.Size = new System.Drawing.Size(226, 36);
             this.accountName.TabIndex = 1;
             this.accountName.Text = "accName";
             this.accountName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -49,9 +49,9 @@ namespace PersonalFinanceApp.View
             // currentAmount
             // 
             this.currentAmount.Dock = System.Windows.Forms.DockStyle.Top;
-            this.currentAmount.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.currentAmount.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.currentAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(110)))));
-            this.currentAmount.Location = new System.Drawing.Point(0, 45);
+            this.currentAmount.Location = new System.Drawing.Point(0, 36);
             this.currentAmount.Name = "currentAmount";
             this.currentAmount.Size = new System.Drawing.Size(226, 36);
             this.currentAmount.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace PersonalFinanceApp.View
             this.initialAmount.Dock = System.Windows.Forms.DockStyle.Top;
             this.initialAmount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.initialAmount.ForeColor = System.Drawing.Color.Salmon;
-            this.initialAmount.Location = new System.Drawing.Point(0, 90);
+            this.initialAmount.Location = new System.Drawing.Point(0, 72);
             this.initialAmount.Name = "initialAmount";
             this.initialAmount.Size = new System.Drawing.Size(226, 36);
             this.initialAmount.TabIndex = 3;
