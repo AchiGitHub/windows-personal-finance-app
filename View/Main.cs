@@ -16,62 +16,63 @@ namespace PersonalFinanceApp
         public Form1()
         {
             InitializeComponent();
-            moveBtnPointer(dashboardBtn);
+            MoveBtnPointer(dashboardBtn);
         }
 
-        private void moveBtnPointer(Control btn) 
+        private void MoveBtnPointer(Control btn) 
         {
             btnPointerPanel.Width = btn.Width;
             btnPointerPanel.Left = btn.Left;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(dashboardBtn);
+            MoveBtnPointer(dashboardBtn);
             Dashboard db = new Dashboard();
             db.LoadAccountDetails();
             db.LoadRecentTransactions();
             db.LoadTotalBalance();
 
+            dashboard.Refresh();
             dashboard.BringToFront();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(eventBtn);
+            MoveBtnPointer(eventBtn);
             addEvent.BringToFront();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(financialStatusBtn);
+            MoveBtnPointer(financialStatusBtn);
         }
 
-        private void addIncome_Click(object sender, EventArgs e)
+        private void AddIncome_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(addIncomeBtn);
+            MoveBtnPointer(addIncomeBtn);
             addIncomePanel.BringToFront();
         }
 
-        private void addExpenseBtn_Click(object sender, EventArgs e)
+        private void AddExpenseBtn_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(addExpenseBtn);
+            MoveBtnPointer(addExpenseBtn);
             addExpense.BringToFront();
         }
 
-        private void addBudgetBtn_Click(object sender, EventArgs e)
+        private void AddBudgetBtn_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(addBudgetBtn);
+            MoveBtnPointer(addBudgetBtn);
             addBudget.BringToFront();
         }
 
-        private void generateReportBtn_Click(object sender, EventArgs e)
+        private void GenerateReportBtn_Click(object sender, EventArgs e)
         {
-            moveBtnPointer(generateReportBtn);
+            MoveBtnPointer(generateReportBtn);
             generateReport.BringToFront();
         }
 
-        private void dashboard_Load(object sender, EventArgs e)
+        private void Dashboard_Load(object sender, EventArgs e)
         {
 
         }

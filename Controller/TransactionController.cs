@@ -13,7 +13,7 @@ namespace PersonalFinanceApp.Controller
         {
         }
 
-        public void createTransaction(String description, DateTime date, String type, String amount, String name, String payment_type) {
+        public void CreateTransaction(String description, DateTime date, String type, String amount, String name, String payment_type) {
             Transactions transactions = new Transactions();
             transactions.CreateTransaction(description, date, type, double.Parse(amount), name, payment_type);
             Account account = new Account();
@@ -22,12 +22,14 @@ namespace PersonalFinanceApp.Controller
             {
                 updateAmount *= -1;
             }
-            account.updateAccount(payment_type, updateAmount);
+            
+            //update the specific accounts current amount based on the type of transaction
+            account.UpdateAccount(payment_type, updateAmount);
         }
 
-        public List<string> getAccountNames() {
+        public List<string> GetAccountNames() {
             Account account = new Account();
-            return account.getAccountNames();
+            return account.GetAccountNames();
         }
     }
 }

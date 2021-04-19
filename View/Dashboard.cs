@@ -26,7 +26,7 @@ namespace PersonalFinanceApp.View
 
         }
 
-        private void addAccountBtn_Click(object sender, EventArgs e)
+        private void AddAccountBtn_Click(object sender, EventArgs e)
         {
             AddAccount addAccount = new AddAccount();
             addAccount.StartPosition = FormStartPosition.CenterParent;
@@ -40,7 +40,7 @@ namespace PersonalFinanceApp.View
 
         public void LoadTotalBalance() {
             DashboardController dashboardController = new DashboardController();
-            double totalAmount = dashboardController.getTotalBalance();
+            double totalAmount = dashboardController.GetTotalBalance();
 
             totalBalanceLbl.Text = "Rs. " + totalAmount.ToString("N2");
         }

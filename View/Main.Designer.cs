@@ -90,7 +90,7 @@ namespace PersonalFinanceApp
             this.financialStatusBtn.TabIndex = 6;
             this.financialStatusBtn.Text = "FINANCIAL STATUS";
             this.financialStatusBtn.UseVisualStyleBackColor = true;
-            this.financialStatusBtn.Click += new System.EventHandler(this.button5_Click);
+            this.financialStatusBtn.Click += new System.EventHandler(this.Button5_Click);
             // 
             // eventBtn
             // 
@@ -105,7 +105,7 @@ namespace PersonalFinanceApp
             this.eventBtn.TabIndex = 5;
             this.eventBtn.Text = "EVENTS";
             this.eventBtn.UseVisualStyleBackColor = true;
-            this.eventBtn.Click += new System.EventHandler(this.button4_Click);
+            this.eventBtn.Click += new System.EventHandler(this.Button4_Click);
             // 
             // generateReportBtn
             // 
@@ -120,7 +120,7 @@ namespace PersonalFinanceApp
             this.generateReportBtn.TabIndex = 4;
             this.generateReportBtn.Text = "GENERATE REPORT";
             this.generateReportBtn.UseVisualStyleBackColor = true;
-            this.generateReportBtn.Click += new System.EventHandler(this.generateReportBtn_Click);
+            this.generateReportBtn.Click += new System.EventHandler(this.GenerateReportBtn_Click);
             // 
             // addBudgetBtn
             // 
@@ -135,7 +135,7 @@ namespace PersonalFinanceApp
             this.addBudgetBtn.TabIndex = 3;
             this.addBudgetBtn.Text = "ADD BUDGET";
             this.addBudgetBtn.UseVisualStyleBackColor = true;
-            this.addBudgetBtn.Click += new System.EventHandler(this.addBudgetBtn_Click);
+            this.addBudgetBtn.Click += new System.EventHandler(this.AddBudgetBtn_Click);
             // 
             // addExpenseBtn
             // 
@@ -150,7 +150,7 @@ namespace PersonalFinanceApp
             this.addExpenseBtn.TabIndex = 2;
             this.addExpenseBtn.Text = "ADD EXPENSE";
             this.addExpenseBtn.UseVisualStyleBackColor = true;
-            this.addExpenseBtn.Click += new System.EventHandler(this.addExpenseBtn_Click);
+            this.addExpenseBtn.Click += new System.EventHandler(this.AddExpenseBtn_Click);
             // 
             // addIncomeBtn
             // 
@@ -165,7 +165,7 @@ namespace PersonalFinanceApp
             this.addIncomeBtn.TabIndex = 1;
             this.addIncomeBtn.Text = "ADD INCOME";
             this.addIncomeBtn.UseVisualStyleBackColor = true;
-            this.addIncomeBtn.Click += new System.EventHandler(this.addIncome_Click);
+            this.addIncomeBtn.Click += new System.EventHandler(this.AddIncome_Click);
             // 
             // dashboardBtn
             // 
@@ -180,7 +180,7 @@ namespace PersonalFinanceApp
             this.dashboardBtn.TabIndex = 0;
             this.dashboardBtn.Text = "DASHBOARD";
             this.dashboardBtn.UseVisualStyleBackColor = true;
-            this.dashboardBtn.Click += new System.EventHandler(this.button1_Click);
+            this.dashboardBtn.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel2
             // 
@@ -205,7 +205,7 @@ namespace PersonalFinanceApp
             this.dashboard.Name = "dashboard";
             this.dashboard.Size = new System.Drawing.Size(856, 451);
             this.dashboard.TabIndex = 6;
-            this.dashboard.Load += new System.EventHandler(this.dashboard_Load);
+            this.dashboard.Load += new System.EventHandler(this.Dashboard_Load);
             // 
             // generateReport
             // 

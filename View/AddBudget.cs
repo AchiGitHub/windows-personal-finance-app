@@ -28,7 +28,7 @@ namespace PersonalFinanceApp
 
         }
 
-        private void createBudgetBtn_Click(object sender, EventArgs e)
+        private void CreateBudgetBtn_Click(object sender, EventArgs e)
         {
             if (budgetName.Text == "" || budgetAmount.Text == "")
             {
@@ -37,7 +37,7 @@ namespace PersonalFinanceApp
             else
             {
                 BudgetController addBudget = new BudgetController(budgetName.Text, budgetStartDate.Value, budgetEndDate.Value, budgetAmount.Text);
-                addBudget.createTransaction();
+                addBudget.CreateTransaction();
                 budgetName.Text = "";
                 budgetAmount.Text = "";
                 MessageBox.Show("Budget Created Successfully!");

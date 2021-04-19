@@ -57,25 +57,25 @@ namespace PersonalFinanceApp.View
             // 
             // totalBalanceLbl
             // 
-            this.totalBalanceLbl.AutoSize = true;
             this.totalBalanceLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.totalBalanceLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(110)))));
-            this.totalBalanceLbl.Location = new System.Drawing.Point(24, 43);
+            this.totalBalanceLbl.Location = new System.Drawing.Point(3, 40);
             this.totalBalanceLbl.Name = "totalBalanceLbl";
-            this.totalBalanceLbl.Size = new System.Drawing.Size(148, 58);
+            this.totalBalanceLbl.Size = new System.Drawing.Size(297, 73);
             this.totalBalanceLbl.TabIndex = 1;
             this.totalBalanceLbl.Text = "22,123";
+            this.totalBalanceLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(28)))), ((int)(((byte)(110)))));
-            this.label1.Location = new System.Drawing.Point(72, 11);
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 32);
+            this.label1.Size = new System.Drawing.Size(296, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Total Balance";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // addAccountBtn
             // 
@@ -88,7 +88,7 @@ namespace PersonalFinanceApp.View
             this.addAccountBtn.TabIndex = 1;
             this.addAccountBtn.Text = "ADD ACCOUNT";
             this.addAccountBtn.UseVisualStyleBackColor = false;
-            this.addAccountBtn.Click += new System.EventHandler(this.addAccountBtn_Click);
+            this.addAccountBtn.Click += new System.EventHandler(this.AddAccountBtn_Click);
             // 
             // recentTransactions
             // 
@@ -176,7 +176,6 @@ namespace PersonalFinanceApp.View
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.VisibleChanged += new System.EventHandler(this.Dashboard_VisibleChanged);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recentTransactions)).EndInit();
             this.ResumeLayout(false);
 

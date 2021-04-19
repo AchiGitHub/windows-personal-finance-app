@@ -55,7 +55,7 @@ namespace PersonalFinanceApp.View
             this.createAccount.TabIndex = 52;
             this.createAccount.Text = "ADD ACCOUNT";
             this.createAccount.UseVisualStyleBackColor = false;
-            this.createAccount.Click += new System.EventHandler(this.createAccount_Click);
+            this.createAccount.Click += new System.EventHandler(this.CreateAccount_Click);
             // 
             // accountType
             // 
@@ -68,7 +68,7 @@ namespace PersonalFinanceApp.View
             this.accountType.Name = "accountType";
             this.accountType.Size = new System.Drawing.Size(472, 24);
             this.accountType.TabIndex = 45;
-            this.accountType.SelectedIndexChanged += new System.EventHandler(this.accountType_SelectedIndexChanged);
+            this.accountType.SelectedIndexChanged += new System.EventHandler(this.AccountType_SelectedIndexChanged);
             // 
             // amount
             // 

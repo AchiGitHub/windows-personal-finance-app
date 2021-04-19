@@ -23,7 +23,7 @@ namespace PersonalFinanceApp.View
 
         }
 
-        private void accountType_SelectedIndexChanged(object sender, EventArgs e)
+        private void AccountType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (accountType.SelectedIndex != 0)
             {
@@ -42,10 +42,10 @@ namespace PersonalFinanceApp.View
 
         }
 
-        private void createAccount_Click(object sender, EventArgs e)
+        private void CreateAccount_Click(object sender, EventArgs e)
         {
             AddAccountController addAccountController = new AddAccountController(accountName.Text, amount.Text, accountType.Text, accountNumber.Text, bankName.Text);
-            addAccountController.createAccount();
+            addAccountController.CreateAccount();
             accountName.Text = "";
             amount.Text = "";
             accountType.Text = "";

@@ -25,9 +25,9 @@ namespace PersonalFinanceApp.Controller
             this.bank_name = bank_name; 
         }
 
-        public void createAccount() {
+        public void CreateAccount() {
             Account account = new Account();
-            account.createAccount(account_name, initial_amount, current_amount, account_type, bank_account_number, bank_name);
+            account.CreateAccount(account_name, initial_amount, current_amount, account_type, bank_account_number, bank_name);
         }
     }
 }

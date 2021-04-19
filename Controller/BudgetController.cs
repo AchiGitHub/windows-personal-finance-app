@@ -22,7 +22,7 @@ namespace PersonalFinanceApp.Controller
             this.amount = double.Parse(amount);
         }
 
-        public void createTransaction()
+        public void CreateTransaction()
         {
             Budget budget = new Budget();
             budget.createBudget(budget_name, start_date, end_date, amount);

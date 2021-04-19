@@ -15,7 +15,7 @@ namespace PersonalFinanceApp.Model
         {
 
         }
-        public void createEvent(String title, DateTime date, String note, String type , String appointmentWith, DateTime appointment_from, DateTime appointment_to)
+        public void CreateEvent(String title, DateTime date, String note, String type , String appointmentWith, DateTime appointment_from, DateTime appointment_to)
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();

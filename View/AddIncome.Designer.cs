@@ -55,7 +55,7 @@ namespace PersonalFinanceApp
             this.createIncomeBtn.TabIndex = 26;
             this.createIncomeBtn.Text = "ADD INCOME";
             this.createIncomeBtn.UseVisualStyleBackColor = false;
-            this.createIncomeBtn.Click += new System.EventHandler(this.createIncomeBtn_Click);
+            this.createIncomeBtn.Click += new System.EventHandler(this.CreateIncomeBtn_Click);
             // 
             // incomeDate
             // 

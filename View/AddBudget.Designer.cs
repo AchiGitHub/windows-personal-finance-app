@@ -53,7 +53,7 @@ namespace PersonalFinanceApp
             this.createBudgetBtn.TabIndex = 52;
             this.createBudgetBtn.Text = "ADD BUDGET";
             this.createBudgetBtn.UseVisualStyleBackColor = false;
-            this.createBudgetBtn.Click += new System.EventHandler(this.createBudgetBtn_Click);
+            this.createBudgetBtn.Click += new System.EventHandler(this.CreateBudgetBtn_Click);
             // 
             // budgetStartDate
             // 

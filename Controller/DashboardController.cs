@@ -9,10 +9,10 @@ namespace PersonalFinanceApp.Controller
 {
     class DashboardController
     {
-        public double getTotalBalance() {
+        public double GetTotalBalance() {
             double totalBalance = 0.0;
             Account account = new Account();
-            var accounts = account.getTotalAccountBalance();
+            var accounts = account.GetTotalAccountBalance();
             foreach (string amount in accounts)
             {
                 var current_amount  =  double.Parse(amount);

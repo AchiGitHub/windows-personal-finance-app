@@ -28,10 +28,10 @@ namespace PersonalFinanceApp.Controller
             this.appointment_to = appointment_to;
         }
 
-        public void createEvent()
+        public void CreateEvent()
         {
             Event newEvent = new Event();
-            newEvent.createEvent(title, date, note, type, with, appointment_from, appointment_to);
+            newEvent.CreateEvent(title, date, note, type, with, appointment_from, appointment_to);
         }
     }
 }

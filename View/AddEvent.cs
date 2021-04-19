@@ -18,7 +18,7 @@ namespace PersonalFinanceApp
             InitializeComponent();
         }
 
-        private void createTask_Click(object sender, EventArgs e)
+        private void CreateTask_Click(object sender, EventArgs e)
         {
             if (taskTitle.Text == "" || taskNote.Text == "")
             {
@@ -27,14 +27,14 @@ namespace PersonalFinanceApp
             else
             {
                 EventController addTask = new EventController(taskTitle.Text, taskDate.Value, taskNote.Text, "T", null, appointmentFrom.Value, appointmentTo.Value);
-                addTask.createEvent();
+                addTask.CreateEvent();
                 taskTitle.Text = "";
                 taskNote.Text = "";
                 MessageBox.Show("Task Created Successfully!");
             }
         }
 
-        private void createAppointment_Click(object sender, EventArgs e)
+        private void CreateAppointment_Click(object sender, EventArgs e)
         {
             if (appointmentTitle.Text == "" || appointmentWith.Text == "")
             {
@@ -43,7 +43,7 @@ namespace PersonalFinanceApp
             else
             {
                 EventController addAppointment = new EventController(appointmentTitle.Text, taskDate.Value, null, "A", appointmentWith.Text, appointmentFrom.Value, appointmentTo.Value);
-                addAppointment.createEvent();
+                addAppointment.CreateEvent();
                 appointmentTitle.Text = "";
                 appointmentWith.Text = "";
                 MessageBox.Show("Appointment Created Successfully!");

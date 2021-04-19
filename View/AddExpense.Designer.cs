@@ -55,7 +55,7 @@ namespace PersonalFinanceApp
             this.createExpense.TabIndex = 39;
             this.createExpense.Text = "ADD EXPENSE";
             this.createExpense.UseVisualStyleBackColor = false;
-            this.createExpense.Click += new System.EventHandler(this.createExpense_Click);
+            this.createExpense.Click += new System.EventHandler(this.CreateExpense_Click);
             // 
             // expenseDate
             // 

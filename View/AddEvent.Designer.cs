@@ -143,7 +143,7 @@ namespace PersonalFinanceApp
             this.createTask.TabIndex = 79;
             this.createTask.Text = "CREATE TASK";
             this.createTask.UseVisualStyleBackColor = false;
-            this.createTask.Click += new System.EventHandler(this.createTask_Click);
+            this.createTask.Click += new System.EventHandler(this.CreateTask_Click);
             // 
             // createAppointment
             // 
@@ -158,7 +158,7 @@ namespace PersonalFinanceApp
             this.createAppointment.TabIndex = 87;
             this.createAppointment.Text = "CREATE APPOINTMENT";
             this.createAppointment.UseVisualStyleBackColor = false;
-            this.createAppointment.Click += new System.EventHandler(this.createAppointment_Click);
+            this.createAppointment.Click += new System.EventHandler(this.CreateAppointment_Click);
             // 
             // appointmentWith
             // 

@@ -18,12 +18,12 @@ namespace PersonalFinanceApp
             InitializeComponent();
             TransactionController transactionController = new TransactionController();
             BindingSource bs = new BindingSource();
-            List<string> accountNames = transactionController.getAccountNames();
+            List<string> accountNames = transactionController.GetAccountNames();
             bs.DataSource = accountNames;
             paymentType.DataSource = bs;
         }
 
-        private void createExpense_Click(object sender, EventArgs e)
+        private void CreateExpense_Click(object sender, EventArgs e)
         {
             if (note.Text == "" || amount.Text == "" || expenseDate.Text == "" || paymentType.Text == "" || expenseName.Text == "")
             {
@@ -32,7 +32,7 @@ namespace PersonalFinanceApp
             else
             {
                 TransactionController transactionController = new TransactionController();
-                transactionController.createTransaction(note.Text, expenseDate.Value, "E", amount.Text, expenseName.Text, paymentType.Text);
+                transactionController.CreateTransaction(note.Text, expenseDate.Value, "E", amount.Text, expenseName.Text, paymentType.Text);
                 note.Text = "";
                 amount.Text = "";
                 expenseDate.Text = "";

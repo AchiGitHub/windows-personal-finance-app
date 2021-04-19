@@ -17,7 +17,7 @@ namespace PersonalFinanceApp.Model
         {
             
         }
-        public void createAccount(String account_name, Double initial_amount, Double current_amount, String account_type, String bank_account_number, String bank_name) {
+        public void CreateAccount(String account_name, Double initial_amount, Double current_amount, String account_type, String bank_account_number, String bank_name) {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
@@ -26,7 +26,7 @@ namespace PersonalFinanceApp.Model
             connection.Close();
         }
 
-        public List<string> getTotalAccountBalance() {
+        public List<string> GetTotalAccountBalance() {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
@@ -42,7 +42,7 @@ namespace PersonalFinanceApp.Model
             return accountBalances;
         }
 
-        public List<string> getAccountNames() {
+        public List<string> GetAccountNames() {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
@@ -58,7 +58,7 @@ namespace PersonalFinanceApp.Model
             return accountNames;
         }
 
-        public void updateAccount(String accountName, double amount) {
+        public void UpdateAccount(String accountName, double amount) {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
