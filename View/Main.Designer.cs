@@ -39,6 +39,7 @@ namespace PersonalFinanceApp
             this.addIncomeBtn = new System.Windows.Forms.Button();
             this.dashboardBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.otherPanel = new PersonalFinanceApp.View.Other();
             this.dashboard = new PersonalFinanceApp.View.Dashboard();
             this.generateReport = new PersonalFinanceApp.GenerateReport();
             this.addExpense = new PersonalFinanceApp.AddExpense();
@@ -46,7 +47,6 @@ namespace PersonalFinanceApp
             this.addDebt = new PersonalFinanceApp.AddDebt();
             this.addBudget = new PersonalFinanceApp.AddBudget();
             this.addIncomePanel = new PersonalFinanceApp.AddIncome();
-            this.otherPanel = new PersonalFinanceApp.View.Other();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@ namespace PersonalFinanceApp
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1276, 79);
+            this.panel1.Size = new System.Drawing.Size(1276, 99);
             this.panel1.TabIndex = 0;
             // 
             // btnPointerPanel
@@ -195,11 +195,18 @@ namespace PersonalFinanceApp
             this.panel2.Controls.Add(this.addBudget);
             this.panel2.Controls.Add(this.addIncomePanel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 79);
+            this.panel2.Location = new System.Drawing.Point(0, 99);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1276, 631);
+            this.panel2.Size = new System.Drawing.Size(1276, 611);
             this.panel2.TabIndex = 1;
+            // 
+            // otherPanel
+            // 
+            this.otherPanel.Location = new System.Drawing.Point(187, 70);
+            this.otherPanel.Name = "otherPanel";
+            this.otherPanel.Size = new System.Drawing.Size(847, 454);
+            this.otherPanel.TabIndex = 7;
             // 
             // dashboard
             // 
@@ -258,13 +265,6 @@ namespace PersonalFinanceApp
             this.addIncomePanel.Size = new System.Drawing.Size(852, 454);
             this.addIncomePanel.TabIndex = 0;
             // 
-            // otherPanel
-            // 
-            this.otherPanel.Location = new System.Drawing.Point(187, 70);
-            this.otherPanel.Name = "otherPanel";
-            this.otherPanel.Size = new System.Drawing.Size(847, 454);
-            this.otherPanel.TabIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,7 +276,7 @@ namespace PersonalFinanceApp
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Personal Finance";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

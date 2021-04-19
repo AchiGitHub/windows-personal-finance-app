@@ -47,5 +47,37 @@ namespace PersonalFinanceApp.Model
             data.Fill(dbtl);
             return dbtl;
         }
+
+        public List<string> GetTotalExpenses(DateTime predictDate)
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "SELECT amount from [Transactions] where transaction_date between DATEADD(MONTH, -2, '"+ predictDate + "') and '" + predictDate + "' and type='E'";
+            SqlDataReader reader = cmd.ExecuteReader();
+            var expences = new List<string>();
+            while (reader.Read())
+            {
+                expences.Add(reader.GetValue(0).ToString());
+            }
+
+            return expences;
+        }
+
+        public List<string> GetTotalIncome(DateTime predictDate)
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "SELECT amount from [Transactions] where transaction_date between DATEADD(MONTH, -2, '" + predictDate + "') and '" + predictDate + "' and type='I'";
+            SqlDataReader reader = cmd.ExecuteReader();
+            var income = new List<string>();
+            while (reader.Read())
+            {
+                income.Add(reader.GetValue(0).ToString());
+            }
+
+            return income;
+        }
     }
 }

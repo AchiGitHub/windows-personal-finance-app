@@ -1,0 +1,13 @@
+1, Food, I, 200, Lunch, 2/17/2021 11:20:25 PM, Cash
+2, Groceries, I, 1999, Keells, 2/15/2021 11:22:14 PM, Cash
+3, Electricity Bill, E, 2000, !st Month, 4/17/2021 11:30:50 PM, Cash
+4, Water Bill, E, 1992, 2nd Month, 2/17/2021 11:31:40 PM, Cash
+6, Beverages, E, 20, drinks, 4/19/2021 1:40:23 AM, HNB
+7, Beverages, E, 20, Drinks, 4/19/2021 1:42:20 AM, Cash In Hand
+9, Beverages, E, 999, Drinks, 4/19/2021 1:44:28 AM, Cash In Hand
+11, Food, E, 500, sadas, 4/19/2021 1:47:50 AM, Sampath Acc
+12, Rent, I, 500, asds, 4/19/2021 1:51:20 AM, HNB
+13, Rent, I, 20000, Perera, 2/19/2021 11:04:17 AM, HNB
+15, Salary, I, 200000, pos, 2/19/2021 11:16:13 AM, Sampath Acc
+18, Rent, I, 500, sdsd, 4/19/2021 7:54:50 PM, Cash In Hand
+21, Rent, I, 269, sss, 3/25/2021 11:09:26 PM, Pan Asia

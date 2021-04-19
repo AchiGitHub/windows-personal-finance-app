@@ -20,3 +20,4 @@ C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceAp
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.Other.resources
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.AllTasks.resources
 C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.AllAppointments.resources
+C:\Users\achin\Desktop\MSC EAD CW\PersonalFinanceApp\obj\Debug\PersonalFinanceApp.View.FinancialStatus.resources

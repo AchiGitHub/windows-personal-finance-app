@@ -30,5 +30,12 @@ namespace PersonalFinanceApp.View
             allAppointments.StartPosition = FormStartPosition.CenterParent;
             allAppointments.ShowDialog(this);
         }
+
+        private void FinancialStatePrediction_Click(object sender, EventArgs e)
+        {
+            FinancialStatus financialStatus = new FinancialStatus();
+            financialStatus.StartPosition = FormStartPosition.CenterParent;
+            financialStatus.ShowDialog(this);
+        }
     }
 }

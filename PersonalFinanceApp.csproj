@@ -67,6 +67,7 @@
     <Compile Include="Controller\BudgetController.cs" />
     <Compile Include="Controller\DashboardController.cs" />
     <Compile Include="Controller\EventController.cs" />
+    <Compile Include="Controller\FinancePredictionController.cs" />
     <Compile Include="Controller\TransactionController.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Budget.cs" />
@@ -134,6 +135,12 @@
     <Compile Include="View\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FinancialStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FinancialStatus.Designer.cs">
+      <DependentUpon>FinancialStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FinancialStatus.resx">
+      <DependentUpon>FinancialStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

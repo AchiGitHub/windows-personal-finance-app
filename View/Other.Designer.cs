@@ -92,6 +92,7 @@ namespace PersonalFinanceApp.View
             this.FinancialStatePrediction.TabIndex = 30;
             this.FinancialStatePrediction.Text = "FINANCIAL STATE PREDICTION";
             this.FinancialStatePrediction.UseVisualStyleBackColor = false;
+            this.FinancialStatePrediction.Click += new System.EventHandler(this.FinancialStatePrediction_Click);
             // 
             // Other
             // 
