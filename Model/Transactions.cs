@@ -29,7 +29,7 @@ namespace PersonalFinanceApp.Model
         public SqlDataAdapter GetTransactions()
         {
             connection.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * from [Transactions]", connection);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * from [Transactions] ORDER BY transaction_date DESC", connection);
             return sqlDa;
         }
         public DataTable GetReportData(DateTime startDate, DateTime endDate)

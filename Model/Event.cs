@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace PersonalFinanceApp.Model
 {
@@ -23,6 +24,23 @@ namespace PersonalFinanceApp.Model
             cmd.CommandText = "insert into [Event] (title, task_date, note, type, appointment_with, appointment_from, appointment_to) values ('" + title + "', '" + date + "','" + note + "', '" + type + "','" + appointmentWith + "','" + appointment_from + "','" + appointment_to + "')";
             cmd.ExecuteNonQuery();
             connection.Close();
+        }
+        public DataTable GetTasks()
+        {
+            connection.Open();
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Event] WHERE type='T' ORDER BY task_date DESC", connection);
+            DataTable dtbl = new DataTable();
+            data.Fill(dtbl);
+            return dtbl;
+        }
+
+        public DataTable GetAppointments()
+        {
+            connection.Open();
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Event] WHERE type='A' ORDER BY task_date DESC", connection);
+            DataTable dtbl = new DataTable();
+            data.Fill(dtbl);
+            return dtbl;
         }
 
     }

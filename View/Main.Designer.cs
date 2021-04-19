@@ -31,7 +31,7 @@ namespace PersonalFinanceApp
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPointerPanel = new System.Windows.Forms.Panel();
-            this.financialStatusBtn = new System.Windows.Forms.Button();
+            this.otherBtn = new System.Windows.Forms.Button();
             this.eventBtn = new System.Windows.Forms.Button();
             this.generateReportBtn = new System.Windows.Forms.Button();
             this.addBudgetBtn = new System.Windows.Forms.Button();
@@ -46,6 +46,7 @@ namespace PersonalFinanceApp
             this.addDebt = new PersonalFinanceApp.AddDebt();
             this.addBudget = new PersonalFinanceApp.AddBudget();
             this.addIncomePanel = new PersonalFinanceApp.AddIncome();
+            this.otherPanel = new PersonalFinanceApp.View.Other();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@ namespace PersonalFinanceApp
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnPointerPanel);
-            this.panel1.Controls.Add(this.financialStatusBtn);
+            this.panel1.Controls.Add(this.otherBtn);
             this.panel1.Controls.Add(this.eventBtn);
             this.panel1.Controls.Add(this.generateReportBtn);
             this.panel1.Controls.Add(this.addBudgetBtn);
@@ -77,20 +78,20 @@ namespace PersonalFinanceApp
             this.btnPointerPanel.Size = new System.Drawing.Size(150, 5);
             this.btnPointerPanel.TabIndex = 0;
             // 
-            // financialStatusBtn
+            // otherBtn
             // 
-            this.financialStatusBtn.FlatAppearance.BorderSize = 0;
-            this.financialStatusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.financialStatusBtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.financialStatusBtn.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.financialStatusBtn.Location = new System.Drawing.Point(1043, 26);
-            this.financialStatusBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.financialStatusBtn.Name = "financialStatusBtn";
-            this.financialStatusBtn.Size = new System.Drawing.Size(195, 28);
-            this.financialStatusBtn.TabIndex = 6;
-            this.financialStatusBtn.Text = "FINANCIAL STATUS";
-            this.financialStatusBtn.UseVisualStyleBackColor = true;
-            this.financialStatusBtn.Click += new System.EventHandler(this.Button5_Click);
+            this.otherBtn.FlatAppearance.BorderSize = 0;
+            this.otherBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.otherBtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherBtn.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.otherBtn.Location = new System.Drawing.Point(1043, 26);
+            this.otherBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.otherBtn.Name = "otherBtn";
+            this.otherBtn.Size = new System.Drawing.Size(195, 28);
+            this.otherBtn.TabIndex = 6;
+            this.otherBtn.Text = "OTHER";
+            this.otherBtn.UseVisualStyleBackColor = true;
+            this.otherBtn.Click += new System.EventHandler(this.Button5_Click);
             // 
             // eventBtn
             // 
@@ -185,6 +186,7 @@ namespace PersonalFinanceApp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(250)))), ((int)(((byte)(248)))));
+            this.panel2.Controls.Add(this.otherPanel);
             this.panel2.Controls.Add(this.dashboard);
             this.panel2.Controls.Add(this.generateReport);
             this.panel2.Controls.Add(this.addExpense);
@@ -227,6 +229,7 @@ namespace PersonalFinanceApp
             // 
             this.addEvent.BackColor = System.Drawing.Color.White;
             this.addEvent.Location = new System.Drawing.Point(187, 70);
+            this.addEvent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addEvent.Name = "addEvent";
             this.addEvent.Size = new System.Drawing.Size(852, 453);
             this.addEvent.TabIndex = 3;
@@ -255,6 +258,13 @@ namespace PersonalFinanceApp
             this.addIncomePanel.Size = new System.Drawing.Size(852, 454);
             this.addIncomePanel.TabIndex = 0;
             // 
+            // otherPanel
+            // 
+            this.otherPanel.Location = new System.Drawing.Point(187, 70);
+            this.otherPanel.Name = "otherPanel";
+            this.otherPanel.Size = new System.Drawing.Size(847, 454);
+            this.otherPanel.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,7 +292,7 @@ namespace PersonalFinanceApp
         private System.Windows.Forms.Button addBudgetBtn;
         private System.Windows.Forms.Button addExpenseBtn;
         private System.Windows.Forms.Button addIncomeBtn;
-        private System.Windows.Forms.Button financialStatusBtn;
+        private System.Windows.Forms.Button otherBtn;
         private System.Windows.Forms.Panel btnPointerPanel;
         private AddIncome addIncomePanel;
         private System.Windows.Forms.Panel panel2;
@@ -292,6 +302,7 @@ namespace PersonalFinanceApp
         private GenerateReport generateReport;
         private AddExpense addExpense;
         private View.Dashboard dashboard;
+        private View.Other otherPanel;
     }
 }
 
