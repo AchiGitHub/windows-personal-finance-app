@@ -87,6 +87,7 @@ namespace PersonalFinanceApp.View
             this.UpdateEvent.TabIndex = 53;
             this.UpdateEvent.Text = "UPDATE";
             this.UpdateEvent.UseVisualStyleBackColor = false;
+            this.UpdateEvent.Click += new System.EventHandler(this.UpdateEvent_Click);
             // 
             // button1
             // 
@@ -101,6 +102,7 @@ namespace PersonalFinanceApp.View
             this.button1.TabIndex = 54;
             this.button1.Text = "DELETE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AllTasks
             // 

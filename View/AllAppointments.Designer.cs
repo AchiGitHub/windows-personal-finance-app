@@ -66,6 +66,7 @@ namespace PersonalFinanceApp.View
             this.UpdateEvent.TabIndex = 56;
             this.UpdateEvent.Text = "UPDATE";
             this.UpdateEvent.UseVisualStyleBackColor = false;
+            this.UpdateEvent.Click += new System.EventHandler(this.UpdateEvent_Click);
             // 
             // AllAppointmentsTable
             // 

@@ -27,5 +27,12 @@ namespace PersonalFinanceApp.View
             AllAppointmentsTable.AutoGenerateColumns = false;
             AllAppointmentsTable.DataSource = data;
         }
+
+        private void UpdateEvent_Click(object sender, EventArgs e)
+        {
+            Event newEvent = new Event();
+            newEvent.UpdateAppointment(AllAppointmentsTable.DataSource as DataTable);
+            MessageBox.Show("Appointment Updated Successfully!");
+        }
     }
 }

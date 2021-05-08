@@ -43,5 +43,21 @@ namespace PersonalFinanceApp.Model
             return dtbl;
         }
 
+        public void UpdateTask(DataTable dataTable) {
+            connection.Open();
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Event] WHERE type='A' ORDER BY task_date DESC", connection);
+            SqlCommandBuilder cb = new SqlCommandBuilder(data);
+            data.UpdateCommand = cb.GetUpdateCommand();
+            data.Update(dataTable);
+        }
+
+        public void UpdateAppointment(DataTable dataTable) {
+            connection.Open();
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * from [Event] WHERE type='A' ORDER BY task_date DESC", connection);
+            SqlCommandBuilder cb = new SqlCommandBuilder(data);
+            data.UpdateCommand = cb.GetUpdateCommand();
+            data.Update(dataTable);
+        }
+
     }
 }

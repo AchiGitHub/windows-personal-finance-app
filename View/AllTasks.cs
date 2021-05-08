@@ -26,5 +26,17 @@ namespace PersonalFinanceApp.View
             AllTasksTable.AutoGenerateColumns = false;
             AllTasksTable.DataSource = data;
         }
+
+        private void UpdateEvent_Click(object sender, EventArgs e)
+        {
+            Event newEvent = new Event();
+            newEvent.UpdateTask(AllTasksTable.DataSource as DataTable);
+            MessageBox.Show("Task Updated Successfully!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
