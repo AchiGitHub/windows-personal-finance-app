@@ -48,12 +48,14 @@ namespace PersonalFinanceApp
         private void AddIncome_Click(object sender, EventArgs e)
         {
             MoveBtnPointer(addIncomeBtn);
+            addIncomePanel.RefreshAddIncome();
             addIncomePanel.BringToFront();
         }
 
         private void AddExpenseBtn_Click(object sender, EventArgs e)
         {
             MoveBtnPointer(addExpenseBtn);
+            addExpense.RefreshAddExpense();
             addExpense.BringToFront();
         }
 

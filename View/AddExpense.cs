@@ -42,6 +42,14 @@ namespace PersonalFinanceApp
             }
         }
 
+        public void RefreshAddExpense() {
+            TransactionController transactionController = new TransactionController();
+            BindingSource bs = new BindingSource();
+            List<string> accountNames = transactionController.GetAccountNames();
+            bs.DataSource = accountNames;
+            paymentType.DataSource = bs;
+        }
+
         private void AddExpense_Load(object sender, EventArgs e)
         {
 
